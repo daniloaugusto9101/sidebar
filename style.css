@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sarala&display=swap');
+
+:root{
+    --first-color: #fff;
+    --second-color: #8621f8;
+    --third-color: rgba(255, 255, 255, 0.1);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background: url(bg.gif);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.side-bar{
+    background: var(--third-color);
+    backdrop-filter: blur(15px);
+    width: 290px;
+    height: 100vh;
+    position: fixed;
+    overflow-y: auto;
+}
+
+.menu{
+    /* background: red; */
+    margin-top: 80px;
+    /* width: 100%; */
+}
+
+.item{
+    cursor: pointer;
+    /* border: 1px solid red; */
+}
+
+.item a{
+    color: var(--first-color);
+    
+    font-size: 16px;
+    display: block;
+    text-decoration: none;
+    line-height: 60px;
+    padding: 5px 30px;
+    /* border: 1px solid black; */
+}
+.item a:hover{
+    background: var(--second-color);
+    transition: .3s ease;
+}
+
+.item i{
+    margin-right: 15px;
+}
+
+.sub-menu{
+    background: var(--third-color);
+    display: block;
+    visibility: hidden;
+    overflow-y: hidden;
+    height: 0;
+    transition: .3s ease;
+}
+
+.sub-menu a{
+    padding-left: 80px;
+}
+
+.active{
+    /* display: block; */
+    visibility: visible;
+    height: 200px;
+}
+.dropdown{
+    position: absolute;
+    right: 0;
+    margin-top: 20px;
+}
+
