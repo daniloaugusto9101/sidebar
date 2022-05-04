@@ -29,7 +29,7 @@ Sidebar Menu
 # Exemplo do site em funcionamento
 <div>
 
-<a href="https://daniloaugusto9101.github.io/slideimg" title="Danilo" target="_blank">
+<a href="https://daniloaugusto9101.github.io/sidebar/" title="Danilo" target="_blank">
 <p>Site demo clique aqui</p>
 <img src="site.gif" width="800px"></a>
 <!-- <video width="800px" controls>
